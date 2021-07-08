@@ -62,13 +62,7 @@ namespace Extensions
 
             var orderQuery = orderQueryBuilder.ToString().TrimEnd(',', ' ');
 
-            // S Dynamic
-            if(string.IsNullOrWhiteSpace(orderQuery))
-            {
-                return models.OrderBy(e => e.Title);
-            }
-
-            return models.OrderBy(orderQuery);
+            return string.IsNullOrWhiteSpace(orderQuery) ? models.OrderBy(e => e.Title) : models.OrderBy(orderQuery);
         }
     }
 }

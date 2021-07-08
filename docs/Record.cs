@@ -5,9 +5,10 @@
 // Description: A To Do App with undo, redo and database CRUD features.
 // ASP.NET Core 5.0
 // Date: 2021-07-08
-// Stop: 16:00
+// Stop: 20:00
 //=================================================================
 
+// Commit Message: Sort now has Id, Title and IsDone (Check)
 // Todo: Tidy up, style and add features to this solution.
 
 // A To Do App with undo, redo and database CRUD features. It has a core Blazor project that can be served by either Wasm_Host or Blazor_Server. The uses HttpClientFactory to get data from Web_Api.

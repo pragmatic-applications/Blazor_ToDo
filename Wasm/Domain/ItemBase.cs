@@ -36,7 +36,7 @@ namespace Domain
             await base.OnInitializedAsync();
 
             this.ItemSelect = new ItemSelect();
-            this.AppNameValue = "To Do Manager";
+            this.AppNameValue = "Blazor ToDo";
 
             this.Item = new();
 
@@ -106,7 +106,6 @@ namespace Domain
             this.Reload();
         }
 
-        // S ToDo
         protected void AddItem()
         {
             this.ToDoItemService.AddItem(this.Item);
@@ -117,14 +116,13 @@ namespace Domain
         {
             foreach(var item in this.ToDoItemService.ToDoItems)
             {
-                await this.ItemService.AddEntityAsync(item); // Update to AddRange for collection...
+                await this.ItemService.AddEntityAsync(item); // Todo: Update to AddRange for collection...
             }
 
             this.ToDoItemService.Clear();
 
             this.Reload();
         }
-        // E ToDo
 
         // Todo: Chech...
         public void Dispose()

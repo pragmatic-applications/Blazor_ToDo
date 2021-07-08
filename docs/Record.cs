@@ -5,13 +5,22 @@
 // Description: A To Do App with undo, redo and database CRUD features.
 // ASP.NET Core 5.0
 // Date: 2021-07-08
-// Stop: 13:00
+// Stop: 16:00
 //=================================================================
 
+// Todo: Tidy up, style and add features to this solution.
+
 // A To Do App with undo, redo and database CRUD features. It has a core Blazor project that can be served by either Wasm_Host or Blazor_Server. The uses HttpClientFactory to get data from Web_Api.
-// Todo: PageFeature => PageFeature
 
 // Do_To with DB CRUD - Create, Read, Update with IsDone and Delete is complete - update style.
+
+// Lib_Shared - This project provides shared features that are used by the other projects of this solution.
+
+// The solution has five projects.
+// Wasm - The core Blazor project that has all the pages and application functionality.
+// Wasm_Host - This is an ASP.NET Core App that serves the Wasm as a Blazor ASP.NET Core hosted App.
+// Blazor_Server - This is a Blazor Server App that serves Wasm.
+// Web_Api - This is an ASP.NET Core Web API that provides the data needed by the Blazor applications.
 
 // Wasm served by Wasm_Host and Blazor_Server (Both Apps can run together using separate ports).
 

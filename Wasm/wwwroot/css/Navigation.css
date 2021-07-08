@@ -276,26 +276,32 @@
     border: none;
     background-color: var(--ThemeBackgroundColorPseudo);
     color: #FFF;
-    text-decoration: none;
     outline: none;
+    text-decoration: none;
 }
 
 .nav_link a
 {
     display: block;
     color: #FFF;
+    outline: none;
+    text-decoration: none;
     transition: all 0.5s ease;
 }
 
 .top_nav_container a
 {
     padding: 15px 52px;
+    outline: none;
+    text-decoration: none;
     transition: all 0.5s ease;
 }
 
 .sidebar a
 {
     padding: 15px;
+    outline: none;
+    text-decoration: none;
     transition: all 0.5s ease;
 }
 
@@ -317,6 +323,8 @@
 .sidebar .nav_link
 {
     border-top: solid 2px #FFF;
+    outline: none;
+    text-decoration: none;
 }
 
 .nav_link:hover

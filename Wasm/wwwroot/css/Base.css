@@ -61,6 +61,12 @@ p
     font-size: 1.2rem;
 }
 
+a
+{
+    outline: none;
+    text-decoration: none;
+}
+
 .main_max_width_a,
 .main_max_width_default
 {
@@ -76,6 +82,7 @@ p
     background: transparent;
     color: var(--ThemeColor);
     font-size: 0.8rem;
+    outline: none;
     text-decoration: none;
     transition: all 0.5s ease;
 }

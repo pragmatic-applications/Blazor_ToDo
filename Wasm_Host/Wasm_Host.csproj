@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Lib_Host_Service" Version="0.0.0.9" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.7" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Wasm\Wasm.csproj" />
+    </ItemGroup>
+
+
+
+
+
+    <!--
+    <ItemGroup>
+        <None Remove="SQLite.db" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Include="SQLite.db">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+        <Resource Include="SQLite.db" />
+    </ItemGroup>
+    -->
+
+    <!--
+    <ItemGroup>
+        <None Remove="SQLite.db" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Include="SQLite.db">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+        <Resource Include="SQLite.db" />
+    </ItemGroup>
+    -->
+
+    <!--<ItemGroup>
+      <None Include="wwwroot\PDF\AnimalIdioms.pdf" />
+      <None Include="wwwroot\PDF\PhrasalVerbs.pdf" />
+    </ItemGroup>-->
+    
+</Project>

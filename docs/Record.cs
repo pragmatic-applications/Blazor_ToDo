@@ -1,23 +1,22 @@
 //=================================================================
 // Solution: Blazor_ToDo
 //=================================================================
-// Programmer: Maurice Antonio Kelly
+// Programmer: Maurice Antonio Kelly @MAKMaurice
 // Description: A To Do App with undo, redo and database CRUD features.
 // ASP.NET Core 5.0
-// Date: 2021-07-07
-// Stop: 23:00
+// Date: 2021-07-08
+// Stop: 13:00
 //=================================================================
 
 // A To Do App with undo, redo and database CRUD features. It has a core Blazor project that can be served by either Wasm_Host or Blazor_Server. The uses HttpClientFactory to get data from Web_Api.
 // Todo: PageFeature => PageFeature
 
-// Do_To with DB CRUD - Create, Read and Update with IsDone complete - Todo: Delete, and update style.
+// Do_To with DB CRUD - Create, Read, Update with IsDone and Delete is complete - update style.
 
 // Wasm served by Wasm_Host and Blazor_Server (Both Apps can run together using separate ports).
 
-// Remove Lib_Shared_Host because I moved its content to Lib_Host_Service
+// Initial commit after cloaning to GitHub from Azure DevOps and solution rename from To_Do to Blazor_ToDo.
 
-// Todo: clean up this solution and share it on GitHub.
 //==========================================================================
 // Migrations S (2021-07-07)
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

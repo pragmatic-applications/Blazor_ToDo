@@ -15,6 +15,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Lib_Shared\Lib_Shared.csproj" />
+      <ProjectReference Include="..\Lib_Wasm\Lib_Wasm.csproj" />
     </ItemGroup>
 
 </Project>

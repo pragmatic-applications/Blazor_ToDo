@@ -4,11 +4,12 @@
 // Programmer: Maurice Antonio Kelly @MAKMaurice
 // Description: A To Do App with undo, redo and database CRUD features.
 // ASP.NET Core 5.0
-// Date: 2021-07-08
-// Stop: 20:00
+// Date: 2021-07-12
+// Stop: 00:00
 //=================================================================
 
-// Commit Message: Sort now has Id, Title and IsDone (Check)
+// Commit Message: Create Lib_Wasm for all Blazor Pages (App)
+// Todo: Lib_Wasm => Lib_Blazor
 // Todo: Tidy up, style and add features to this solution.
 
 // A To Do App with undo, redo and database CRUD features. It has a core Blazor project that can be served by either Wasm_Host or Blazor_Server. The uses HttpClientFactory to get data from Web_Api.
@@ -75,6 +76,21 @@
 
 /*
 
-
+blazor.webassembly.js:1 crit: Microsoft.AspNetCore.Components.WebAssembly.Rendering.WebAssemblyRenderer[100]
+      Unhandled exception rendering component: Cannot provide a value for property 'NavigationJSI' on type 'BlazorUI.Views.PageContainer'. There is no registered service of type 'BlazorUI.NavigationJSI'.
+System.InvalidOperationException: Cannot provide a value for property 'NavigationJSI' on type 'BlazorUI.Views.PageContainer'. There is no registered service of type 'BlazorUI.NavigationJSI'.
+   at Microsoft.AspNetCore.Components.ComponentFactory.<>c__DisplayClass6_0.<CreateInitializer>g__Initialize|2(IServiceProvider serviceProvider, IComponent component)
+   at Microsoft.AspNetCore.Components.ComponentFactory.PerformPropertyInjection(IServiceProvider serviceProvider, IComponent instance)
+   at Microsoft.AspNetCore.Components.ComponentFactory.InstantiateComponent(IServiceProvider serviceProvider, Type componentType)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.InstantiateComponent(Type componentType)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.InstantiateChildComponentOnFrame(RenderTreeFrame& frame, Int32 parentComponentId)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewComponentFrame(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewSubtree(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.ComputeDiff(Renderer renderer, RenderBatchBuilder batchBuilder, Int32 componentId, ArrayRange`1 oldTree, ArrayRange`1 newTree)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderInExistingBatch(RenderQueueEntry renderQueueEntry)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
 
 //*/

@@ -1,0 +1,61 @@
+﻿@page "/Admin/Update/{Id:int}"
+
+@inherits ItemBase
+
+<Banner BannerTitleParameter="@this.BannerTitleValue" AppNameParameter="@this.AppNameValue" />
+
+<div class="container">
+
+    @if(this.Item?.Id == 0)
+    {
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text">No Item to edit.</p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="card">
+            <div class="card-body">
+                <p class="card-title">
+                    #@this.EntryId: @this.Item.Title
+                </p>
+
+                <p class="card-text">
+                    Done: @this.IsDone
+                </p>
+            </div>
+        </div>
+
+        <h5 class="text_center">@this.FormTitle</h5>
+
+        <div class="EditForm">
+            <EditForm Model="@this.Item" OnValidSubmit="@this.UpdateAsync">
+                <DataAnnotationsValidator />
+                <input type="hidden" @bind="this.Item.Id" />
+
+                <div class="form_group">
+                    <label for="Title" class="control-label control_label">Entry</label>
+                    <InputTextArea @bind-Value="this.Item.Title" class="form_control" placeholder="Add Entry"></InputTextArea>
+                    <ValidationMessage For="@(() => this.Item.Title)" />
+                </div>
+
+                <div class="form_group">
+                    <label for="IsDone" class="control-label control_label">Done</label>
+                    <InputCheckbox @bind-Value="this.Item.IsDone"></InputCheckbox>
+                    <ValidationMessage For="@(() => this.Item.IsDone)" />
+                </div>
+
+                <div class="form_group">
+                    <a class="btn btn_primary btn_sm" href="@PageRoute.Admin">Cancel</a>
+                    <button type="submit" class="btn btn_primary btn_sm">Save</button>
+                </div>
+            </EditForm>
+        </div>
+    }
+</div>
+
+<div class="page-top">
+    <NavLink href="Items/Admin/Update/{Id:int}" class="top"></NavLink>
+</div>

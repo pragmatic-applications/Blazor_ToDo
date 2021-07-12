@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
@@ -9,14 +9,13 @@
     </ItemGroup>
 
     <ItemGroup>
-        <!--<PackageReference Include="BlazorUI" Version="0.0.0.4" />-->
+        <PackageReference Include="BlazorUI" Version="0.0.0.5" />
 
         <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.7" />
         <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\Blazor_UI\BlazorUI\BlazorUI.csproj" />
         <ProjectReference Include="..\Lib_Shared\Lib_Shared.csproj" />
     </ItemGroup>
 

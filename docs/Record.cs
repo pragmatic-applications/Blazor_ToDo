@@ -5,10 +5,10 @@
 // Description: A To Do App with undo, redo and database CRUD features.
 // ASP.NET Core 5.0
 // Date: 2021-07-12
-// Stop: 15:00
+// Stop: 16:00
 //=================================================================
 
-// Commit Message: Temporary use of local libraries while I refactor to reduce redundant references (remove Lib_Host_Service).
+// Commit Message: Using NuGet packages Lib_Core and BlazorUI
 
 // Todo: Tidy up, style and add features to this solution.
 

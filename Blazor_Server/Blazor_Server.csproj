@@ -5,10 +5,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Lib_Host_Service" Version="0.0.0.7" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Blazor\Blazor.csproj" />
     </ItemGroup>
 

@@ -6,13 +6,13 @@ using Domain;
 
 using Interfaces;
 
-using Lib_BrowserPlatform;
-
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 using Newtonsoft.Json;
+
+using PageFeatures;
 
 namespace Controllers
 {

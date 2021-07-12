@@ -5,11 +5,11 @@
 // Description: A To Do App with undo, redo and database CRUD features.
 // ASP.NET Core 5.0
 // Date: 2021-07-12
-// Stop: 00:00
+// Stop: 15:00
 //=================================================================
 
-// Commit Message: Create Lib_Wasm for all Blazor Pages (App)
-// Todo: Lib_Wasm => Lib_Blazor
+// Commit Message: Temporary use of local libraries while I refactor to reduce redundant references (remove Lib_Host_Service).
+
 // Todo: Tidy up, style and add features to this solution.
 
 // A To Do App with undo, redo and database CRUD features. It has a core Blazor project that can be served by either Wasm_Host or Blazor_Server. The uses HttpClientFactory to get data from Web_Api.
@@ -26,7 +26,13 @@
 
 // Wasm served by Wasm_Host and Blazor_Server (Both Apps can run together using separate ports).
 
-// Initial commit after cloaning to GitHub from Azure DevOps and solution rename from To_Do to Blazor_ToDo.
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+// Libraries for NuGet - S
+// Lib_Core, BlazorUI, Lib_Host_Service
+// Libraries for NuGet - E
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 //==========================================================================
 // Migrations S (2021-07-07)

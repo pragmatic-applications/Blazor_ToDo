@@ -26,8 +26,8 @@
 <div class="large_screen_container zero_auto">
     <div class="container-fluid table-responsive">
         <table class="table table-sm">
-            <thead>
-                <tr>
+            <thead class="thead">
+                <tr class="@(this.IsCrudParameter ? "grid_col_repeat_6_1fr" : "grid_col_repeat_3_1fr") margin_bottom_10">
                     <th>#</th>
                     <th>Title</th>
                     <th>Done</th>
@@ -41,7 +41,7 @@
 
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="tbody">
                 <UIEntityRepeater TEntity="ToDoItem" Entities="@this.EntitiesParameter">
                     <Entity Context="item">
                         <TableData EntityParameter="@item" IsCrudParameter="@this.IsCrudParameter" />

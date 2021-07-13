@@ -4,11 +4,11 @@
 // Programmer: Maurice Antonio Kelly @MAKMaurice
 // Description: A To Do App with undo, redo and database CRUD features.
 // ASP.NET Core 5.0
-// Date: 2021-07-12
-// Stop: 16:00
+// Date: 2021-07-13
+// Stop: 12:00
 //=================================================================
 
-// Commit Message: Using NuGet packages Lib_Core and BlazorUI
+// Commit Message: Remove Bootstrap and using plain CSS.
 
 // Todo: Tidy up, style and add features to this solution.
 

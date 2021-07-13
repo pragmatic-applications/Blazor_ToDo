@@ -13,13 +13,6 @@
 
 body
 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto 1fr auto;
-    grid-gap: 0;
-    width: 100%;
-    height: 100vh;
-    font-size: 1.0rem;
     font-size: 1.05rem;
     background: #FFF;
     color: #000;
@@ -303,11 +296,6 @@ ol li span
     padding-bottom: 10px;
 }
 
-/*.GridItemID
-{
-    padding-left: 10px;
-}*/
-
 @media (min-width: 480px)
 {
     .GridItemTextContainer
@@ -319,11 +307,6 @@ ol li span
         min-height: 28.0rem;
         min-height: 20.0rem;
     }
-
-    /*.GridItemID
-    {
-        padding-left: 30px;
-    }*/
 }
 
 img.img-circle,
@@ -362,11 +345,6 @@ img.img-circle,
 {
     max-width: 1800px;
 }
-
-/*.DataGridContainer.DataGridItem
-{
-    background-image: linear-gradient(to bottom, #e05518, #DEE8FB);
-}*/
 
 .GridImage
 {

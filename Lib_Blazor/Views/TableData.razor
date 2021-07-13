@@ -2,7 +2,7 @@
 
 <Container UIEntityParameter="@this.EntityParameter">
 
-    <tr>
+    <tr class="@(this.IsCrudParameter ? "grid_col_repeat_6_1fr" : "grid_col_repeat_3_1fr") margin_bottom_10">
         <td>
             <p>@this.EntryId</p>
         </td>
@@ -21,21 +21,21 @@
             this.UrlEdit = $"{PageRoute.S_AdminUpdate}/{this.EntityParameter.Id}";
             this.UrlDelete = $"{PageRoute.S_AdminDelete}/{this.EntityParameter.Id}";
 
-            <th>
-                <a class="btn btn_theme_b btn_sm" href="@this.UrlDetail">
+            <td>
+                <a class="btn btn_theme_b btn_sm btn_min_width" href="@this.UrlDetail">
                     Detail
                 </a>
-            </th>
-            <th>
-                <a class="btn btn_theme_b btn_sm" href="@this.UrlEdit">
+            </td>
+            <td>
+                <a class="btn btn_theme_b btn_sm btn_min_width" href="@this.UrlEdit">
                     Edit
                 </a>
-            </th>
-            <th>
-                <a class="btn btn_danger btn_sm" href="@this.UrlDelete">
+            </td>
+            <td>
+                <a class="btn btn_danger btn_sm btn_min_width" href="@this.UrlDelete">
                     X
                 </a>
-            </th>
+            </td>
         }
     </tr>
 

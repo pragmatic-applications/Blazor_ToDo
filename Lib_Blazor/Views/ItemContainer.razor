@@ -1,48 +1,79 @@
 ﻿@inherits UIEntityBase
 
 <Container UIEntityParameter="@this.EntityParameter">
-    <div class="row g-0">
-        <div class="col">
-            <div class="card text-dark bg-light">
-                <div class="card-body">
-                    <div class="row g-0">
-                        <div class="col">
-                            <p class="card-title">#@this.EntryId: @this.EntityParameter.Title</p>
-                        </div>
-                    </div>
-                    <div class="row g-0">
-                        <div class="col">
-                            <p>
-                                Done: @this.IsDone
-                            </p>
-                        </div>
-                    </div>
-                    @if(this.IsCrudParameter)
-                    {
-                        this.UrlDetail = $"{PageRoute.S_AdminDetails}/{this.EntityParameter.Id}";
-                        this.UrlEdit = $"{PageRoute.S_AdminUpdate}/{this.EntityParameter.Id}";
-                        this.UrlDelete = $"{PageRoute.S_AdminDelete}/{this.EntityParameter.Id}";
+    <div class="card text-dark bg-light">
+        <div class="card-body">
+            <p class="card-title">
+                #@this.EntryId: @this.EntityParameter.Title
+            </p>
+            <p>
+                Done: @this.IsDone
+            </p>
+            @if(this.IsCrudParameter)
+            {
+                this.UrlDetail = $"{PageRoute.S_AdminDetails}/{this.EntityParameter.Id}";
+                this.UrlEdit = $"{PageRoute.S_AdminUpdate}/{this.EntityParameter.Id}";
+                this.UrlDelete = $"{PageRoute.S_AdminDelete}/{this.EntityParameter.Id}";
 
-                        <div class="row g-0">
-                            <div class="col">
-                                <a class="btn btn_success- btn_theme_b btn_sm" href="@this.UrlDetail">
-                                    Detail
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a class="btn btn_info- btn_theme_b btn_sm" href="@this.UrlEdit">
-                                    Edit
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a class="btn btn_danger btn_sm" href="@this.UrlDelete">
-                                    X
-                                </a>
-                            </div>
-                        </div>
-                    }
+                <div>
+                    <a class="btn btn_theme_b btn_sm btn_min_width" href="@this.UrlDetail">
+                        Detail
+                    </a>
+                    <a class="btn btn_theme_b btn_sm btn_min_width" href="@this.UrlEdit">
+                        Edit
+                    </a>
+                    <a class="btn btn_danger btn_sm btn_min_width" href="@this.UrlDelete">
+                        X
+                    </a>
                 </div>
-            </div>
+            }
         </div>
     </div>
 </Container>
+
+@*<Container UIEntityParameter="@this.EntityParameter">
+        <div class="row g-0">
+            <div class="col">
+                <div class="card text-dark bg-light">
+                    <div class="card-body">
+                        <div class="row g-0">
+                            <div class="col">
+                                <p class="card-title">#@this.EntryId: @this.EntityParameter.Title</p>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col">
+                                <p>
+                                    Done: @this.IsDone
+                                </p>
+                            </div>
+                        </div>
+                        @if(this.IsCrudParameter)
+                        {
+                            this.UrlDetail = $"{PageRoute.S_AdminDetails}/{this.EntityParameter.Id}";
+                            this.UrlEdit = $"{PageRoute.S_AdminUpdate}/{this.EntityParameter.Id}";
+                            this.UrlDelete = $"{PageRoute.S_AdminDelete}/{this.EntityParameter.Id}";
+
+                            <div class="row g-0">
+                                <div class="col">
+                                    <a class="btn btn_theme_b btn_sm btn_min_width" href="@this.UrlDetail">
+                                        Detail
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn_theme_b btn_sm btn_min_width" href="@this.UrlEdit">
+                                        Edit
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn_danger btn_sm btn_min_width" href="@this.UrlDelete">
+                                        X
+                                    </a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Container>*@
